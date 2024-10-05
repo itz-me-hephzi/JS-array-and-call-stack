@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Call Stack</title>
+</head>
+<body>
+    <h2>JS call stack</h2>
+    <p>finding average of two numbers</p>
+    <p id="demo"></p>
+    <script>
+        function add(x,y){
+            return x+y;
+        }
+        function average(x,y){
+            return add(x,y)/2
+        }
+        var result=average(45,14);
+        document.getElementById("demo").innerHTML=result;
+    </script>
+</body>
+</html>

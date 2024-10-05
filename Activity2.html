@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Array Methods</title>
+</head>
+<body>
+    <h2>JS array Methods</h2>
+    <p id="myjoin"></p>
+    <p id="myfirstpop"></p>
+    <p id="mysecondpop"></p>
+    <script>
+        var colors=["violet","red", "green"]
+        document.getElementById("myjoin").innerHTML= colors.join(" ^ ")
+        colors.pop()
+        document.getElementById("myfirstpop").innerHTML=colors
+        colors.pop()
+        document.getElementById("mysecondpop").innerHTML=colors
+        colors.push("blue")
+        document.getElementById("mysecondpop").innerHTML=colors
+    </script>
+</body>
+</html>
